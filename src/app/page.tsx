@@ -5,11 +5,11 @@ import NgoList from "@/components/NgoList";
 
 export default function Home() {
   return (
-    <main className="px-6 sm:px-20 max-w-screen-2xl mx-auto">
+    <main className="sm:px-20 w-10/12 mx-auto">
       <Navbar />
       <Hero />
-      <NgoList />
-      <Footer />
+      {/* <NgoList />
+      <Footer /> */}
     </main>
   );
 }
