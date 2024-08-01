@@ -48,23 +48,22 @@ const Hero = () => {
   const [transactions, setTransactions] = useState(transactionsList);
 
   return (
-    <section className="relative my-[80px]">
-      <div className="flex flex-col gap-4 max-w-[45%] my-10">
-        <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl lg:leading-tight from-purple-600 via-pink-600 to-blue-600 bg-gradient-to-r bg-clip-text text-transparent">
-          Revolutionizing <br />
-          NGO Fundraising with Web3 and WalletConnect
+    <section className="relative my-2 sm:my-[80px]">
+      <div className="flex flex-col gap-4 w-auto lg:max-w-[45%] my-10">
+        <h1 className="scroll-m-20 text-4xl sm:text-5xl font-extrabold tracking-tight md:text-6xl lg:text-5xl lg:leading-tight from-purple-600 via-pink-600 to-blue-600 bg-gradient-to-r bg-clip-text text-transparent">
+          Revolutionizing NGO Fundraising with Web3 and WalletConnect
         </h1>
-        <span className="text-sm text-[#dedede] mb-4">
+        <span className="text-xs sm:text-sm text-[#dedede] mb-4">
           Empowering NGOs to Unlock New Donation Channels with Effortless Crypto
           Integration and Superior Security
         </span>
-        <Button variant="default" className="w-fit p-6 drop-shadow-md">
+        <Button variant="default" className="w-fit p-4 sm:p-6 drop-shadow-md">
           Connect Wallet
         </Button>
       </div>
 
-      <div className="heroDisplay">
-        <div className="absolute -right-[20px] md:right-[150px] lg:right-[310px] top-0 w-[230px] h-[450px] bg-[#cecece] rounded-3xl flex justify-center items-center drop-shadow-lg">
+      <div className="heroDisplay hidden md:block absolute right-0 -bottom-[200px] md:-bottom-[180px] lg:top-0">
+        <div className="absolute right-[310px] top-0 w-[230px] h-[450px] bg-[#cecece] rounded-3xl flex justify-center items-center drop-shadow-lg">
           <div className="w-[210px] h-[430px] bg-[#dedede] flex flex-col items-center rounded-3xl shadow-inner">
             <div className="text-xs mt-5 bg-secondary px-2 py-1 rounded-full flex justify-center items-center">
               Ethereum <ChevronDownIcon className="h-4 w-4" />
@@ -119,9 +118,9 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="absolute -z-20 -right-[206px] -top-[60px] w-[300px] md:w-[500px] lg:w-[650px] h-[500px] rounded-l-xl from-purple-500 via-pink-500 to-blue-500 bg-gradient-to-r">
+        <div className="absolute -z-20 -right-[206px] -top-[60px] w-[650px] h-[500px] rounded-l-xl from-purple-500 via-pink-500 to-blue-500 bg-gradient-to-r">
           <div className="absolute -z-10 inset-0 rounded-l-xl from-purple-500 via-pink-500 to-blue-500 bg-gradient-to-r blur-md"></div>
-          <div className="my-12 ml-[150px] md:w-[350px] lg:w-[500px] h-[400px] rounded-l-xl bg-[linear-gradient(hsla(0,_0%,_100%,_.4),_hsla(0,_0%,_100%,_.3)_25%,_rgba(246,_249,_252,_.3)_50%,_rgba(246,_249,_252,_.5)_100%)]">
+          <div className="my-12 ml-[150px] w-[500px] h-[400px] rounded-l-xl bg-[linear-gradient(hsla(0,_0%,_100%,_.4),_hsla(0,_0%,_100%,_.3)_25%,_rgba(246,_249,_252,_.3)_50%,_rgba(246,_249,_252,_.5)_100%)]">
             <div className="w-11/12 h-auto mx-auto py-2">
               <div className="font-medium text-sm text-secondary py-4 border-b-[1px] border-[rgba(230,230,230,0.6)]">
                 Latest Transactions
