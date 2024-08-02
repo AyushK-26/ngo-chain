@@ -120,7 +120,7 @@ const Hero = () => {
 
         <div className="absolute -z-20 -right-[206px] -top-[60px] w-[650px] h-[500px] rounded-l-xl from-purple-500 via-pink-500 to-blue-500 bg-gradient-to-r">
           <div className="absolute -z-10 inset-0 rounded-l-xl from-purple-500 via-pink-500 to-blue-500 bg-gradient-to-r blur-md"></div>
-          <div className="my-12 ml-[150px] w-[500px] h-[400px] rounded-l-xl bg-[linear-gradient(hsla(0,_0%,_100%,_.4),_hsla(0,_0%,_100%,_.3)_25%,_rgba(246,_249,_252,_.3)_50%,_rgba(246,_249,_252,_.5)_100%)]">
+          <div className="my-12 ml-[150px] w-[500px] h-[400px] rounded-l-xl bg-[linear-gradient(hsla(0,_0%,_100%,_.7),_hsla(0,_0%,_100%,_.7)_25%,_rgba(246,_249,_252,_.6)_50%,_rgba(246,_249,_252,_.7)_100%)]">
             <div className="w-11/12 h-auto mx-auto py-2">
               <div className="font-medium text-sm text-secondary py-4 border-b-[1px] border-[rgba(230,230,230,0.6)]">
                 Latest Transactions
