@@ -48,9 +48,9 @@ const Hero = () => {
   const [transactions, setTransactions] = useState(transactionsList);
 
   return (
-    <section className="relative my-2 sm:my-[80px]">
+    <section className="relative flex flex-col sm:h-[68rem] lg:h-[30rem] gap-36 my-2 lg:my-[80px]">
       <div className="flex flex-col gap-4 w-auto lg:max-w-[45%] my-10">
-        <h1 className="scroll-m-20 text-4xl sm:text-5xl font-extrabold tracking-tight md:text-6xl lg:text-5xl lg:leading-tight from-purple-600 via-pink-600 to-blue-600 bg-gradient-to-r bg-clip-text text-transparent">
+        <h1 className="scroll-m-20 text-4xl sm:text-5xl font-extrabold tracking-tight text-pretty md:text-6xl lg:text-5xl lg:leading-tight from-purple-600 via-pink-600 to-blue-600 bg-gradient-to-r bg-clip-text text-transparent">
           Revolutionizing NGO Fundraising with Web3 and WalletConnect
         </h1>
         <span className="text-xs sm:text-sm text-[#dedede] mb-4">
@@ -62,8 +62,8 @@ const Hero = () => {
         </Button>
       </div>
 
-      <div className="heroDisplay hidden md:block absolute right-0 -bottom-[200px] md:-bottom-[180px] lg:top-0">
-        <div className="absolute right-[310px] top-0 w-[230px] h-[450px] bg-[#cecece] rounded-3xl flex justify-center items-center drop-shadow-lg">
+      <div className="heroDisplay hidden sm:block relative lg:absolute right-0 top-0">
+        <div className="absolute right-[160px] md:right-[310px] top-0 w-[230px] h-[450px] bg-[#cecece] rounded-3xl flex justify-center items-center drop-shadow-lg">
           <div className="w-[210px] h-[430px] bg-[#dedede] flex flex-col items-center rounded-3xl shadow-inner">
             <div className="text-xs mt-5 bg-secondary px-2 py-1 rounded-full flex justify-center items-center">
               Ethereum <ChevronDownIcon className="h-4 w-4" />
@@ -118,9 +118,9 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="absolute -z-20 -right-[206px] -top-[60px] w-[650px] h-[500px] rounded-l-xl from-purple-500 via-pink-500 to-blue-500 bg-gradient-to-r">
+        <div className="absolute -z-20 -right-[206px] -top-[60px] w-[500px] md:w-[650px] h-[500px] rounded-l-xl from-purple-500 via-pink-500 to-blue-500 bg-gradient-to-r">
           <div className="absolute -z-10 inset-0 rounded-l-xl from-purple-500 via-pink-500 to-blue-500 bg-gradient-to-r blur-md"></div>
-          <div className="my-12 ml-[150px] w-[500px] h-[400px] rounded-l-xl bg-[linear-gradient(hsla(0,_0%,_100%,_.7),_hsla(0,_0%,_100%,_.7)_25%,_rgba(246,_249,_252,_.6)_50%,_rgba(246,_249,_252,_.7)_100%)]">
+          <div className="my-12 ml-[150px] w-[350px] md:w-[500px] h-[400px] rounded-l-xl bg-[linear-gradient(hsla(0,_0%,_100%,_.7),_hsla(0,_0%,_100%,_.7)_25%,_rgba(246,_249,_252,_.6)_50%,_rgba(246,_249,_252,_.7)_100%)]">
             <div className="w-11/12 h-auto mx-auto py-2">
               <div className="font-medium text-sm text-secondary py-4 border-b-[1px] border-[rgba(230,230,230,0.6)]">
                 Latest Transactions
@@ -132,7 +132,9 @@ const Hero = () => {
                     key={transaction.address}
                     className="flex justify-around items-center text-xs text-secondary font-medium py-3 border-b-[1px] border-[rgba(230,230,230,0.6)]"
                   >
-                    <span className="text-blue-800">{transaction.address}</span>
+                    <span className="text-blue-800 hidden md:block">
+                      {transaction.address}
+                    </span>
                     <div className="flex flex-col">
                       <span>
                         From{" "}
@@ -153,35 +155,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
-      {/* BEKAAR SHIT */}
-      {/* <div className="w-[450px]">
-        <AspectRatio ratio={4 / 3}>
-          <Image
-            src={heroImage}
-            alt="Image"
-            className="rounded-md object-contain"
-          />
-        </AspectRatio>
-      </div> */}
     </section>
-    // <section className="flex flex-col md:flex-row md:justify-between gap-12 md:h-[75vh] items-center">
-    //   <div className="flex flex-col items-start gap-6 md:gap-12 w-full md:w-1/2 justify-center">
-    //     <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl lg:leading-tight from-purple-600 via-pink-600 to-blue-600 bg-gradient-to-r bg-clip-text text-transparent">
-    //       Revolutionizing Fundraising through Web3 and WalletConnect
-    //     </h1>
-    //     <Button variant="default" className="">
-    //       Connect Wallet
-    //     </Button>
-    //   </div>
-    //   <div className="w-full md:w-2/5">
-    //     <Image
-    //       src={heroImage}
-    //       alt="Image"
-    //       className="rounded-md object-cover"
-    //     />
-    //   </div>
-    // </section>
   );
 };
 

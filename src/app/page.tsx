@@ -8,8 +8,8 @@ export default function Home() {
     <main className="sm:px-20 w-10/12 mx-auto">
       <Navbar />
       <Hero />
-      {/* <NgoList />
-      <Footer /> */}
+      <NgoList />
+      <Footer />
     </main>
   );
 }
